@@ -33,7 +33,11 @@ const TabNavigation = () => {
         inactiveTintColor: "gray",
       }}
     >
-      <Tab.Screen name="Map" component={MapScreen} />
+      <Tab.Screen
+        name="Map"
+        component={MapScreen}
+        options={{ headerShown: false }}
+      />
     </Tab.Navigator>
   );
 };
